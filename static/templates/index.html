@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-theme="forest">
+
+<head>
+    <meta charset='utf-8'>
+    <title>HTMX Chatroom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type="text/css" href='../css/output.css'>
+    <script src="../htmx/htmx.js"></script>
+</head>
+
+<body class="w-screen h-screen bg-base-100 text-white">
+    <div class="container h-screen mx-auto p-5 flex flex-col justify-end">
+        <h1 class="mb-5 text-2xl font-bold text-center">HTMX Chatroom</h1>
+        <div class="flex-1 p-5 flex flex-col gap-5 flex-nowrap justify-end overflow-y-auto no-scrollbar" id="contentDiv">
+        </div>
+
+        <div class="grid grid-cols-5 gap-5">
+            <input class="input col-span-4 border-primary focus:border-primary" id="messageInput" placeholder="Message..." type="text">
+            <button class="btn btn-primary">Send Message</button>
+        </div>
+    </div>
+</body>
+
+</html>
